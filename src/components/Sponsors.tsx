@@ -19,14 +19,18 @@ export default function Sponsors() {
                             Title Sponsor
                         </h3>
                         <div className="bg-card border border-neon-purple/30 rounded-lg p-8 max-w-md mx-auto">
-                            <div className="w-32 h-32 bg-gradient-to-br from-neon-purple to-neon-cyan rounded-lg flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                            <a
+                                href="https://www.hackclub.com/"
+                                target="_blank"
+                                className="w-32 h-32 bg-gradient-to-br from-neon-purple to-neon-cyan rounded-lg flex items-center justify-center mx-auto mb-4 overflow-hidden"
+                            >
                                 <img
                                     src="/sponsors/hackclub.png"
                                     width={200}
                                     height={200}
                                     alt="Hackclub logo"
                                 />
-                            </div>
+                            </a>
                             <span className="text-2xl font-bold text-white">
                                 Hack Club
                             </span>
@@ -41,20 +45,33 @@ export default function Sponsors() {
                             Gold Sponsors
                         </h3>
                         <div className="grid md:grid-cols-4 gap-4">
-                            {[1, 2, 3, 4].map((i) => (
-                                <div
+                            {[
+                                {
+                                    name: "JukeBox",
+                                    logo: "/sponsors/jukebox.svg",
+                                    url: "https://www.jukeboxprint.com/custom-stickers",
+                                },
+                            ].map((sponsor, i) => (
+                                <a
+                                    href={sponsor.url}
+                                    target="_blank"
                                     key={i}
                                     className="bg-card border border-hack-red/30 rounded-lg p-4"
                                 >
                                     <div className="w-16 h-16 bg-hack-red/20 rounded-lg flex items-center justify-center mx-auto mb-2">
                                         <span className="text-hack-red text-sm font-bold">
-                                            LOGO
+                                            <img
+                                                src={sponsor.logo}
+                                                width={100}
+                                                height={100}
+                                                alt={sponsor.name}
+                                            />
                                         </span>
                                     </div>
                                     <p className="text-xs text-muted-foreground">
-                                        Partner {i}
+                                        {sponsor.name}
                                     </p>
-                                </div>
+                                </a>
                             ))}
                         </div>
                     </div>

@@ -15,31 +15,43 @@ export default function Team() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-4 gap-8 mb-16">
+                <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {[
                         {
                             name: "Muganwa Rogers",
-                            role: "Manager",
+                            role: "Event Organiser",
                             color: "neon-purple",
                             image: "/team/rogers.png",
                         },
                         {
                             name: "Mugisha Valentin",
-                            role: "Manager",
+                            role: "Content Communications",
                             color: "neon-purple",
                             image: "/team/valentin.jpg",
                         },
                         {
                             name: "Ndizeye David",
-                            role: "Member",
+                            role: "Tech Coordinator",
                             color: "hack-red",
                             image: "/team/david.png",
                         },
                         {
                             name: "Max Boss",
-                            role: "Member",
+                            role: "Finance & Budget Manager",
                             color: "neon-pink",
                             image: "/team/max.jpg",
+                        },
+                        {
+                            name: "Damson",
+                            role: "Logistics & Operations",
+                            color: "neon-pink",
+                            image: "/team/damson.png",
+                        },
+                        {
+                            name: "Jack405",
+                            role: "Member",
+                            color: "neon-cyan",
+                            image: "/team/jack.png",
                         },
                     ].map((member, index) => (
                         <Card

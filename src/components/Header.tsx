@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Gamepad2, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useScrollDirection } from "@/hooks/use-scroll-direction";
+import { AnimatedThemeToggler } from "./ui/animated-theme-toggler";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -67,6 +68,7 @@ export default function Header() {
                         >
                             Team
                         </button>
+
                         <Button variant="hero" size="sm">
                             <Gamepad2 className="mr-2 w-4 h-4" />
                             Register

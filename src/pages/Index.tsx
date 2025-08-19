@@ -1,15 +1,137 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Clock, Trophy, Users, Gamepad2, Code, Zap, MapPin } from "lucide-react";
+import { Calendar, Clock, Trophy, Users, Gamepad2, Code, Zap, MapPin, Menu, X } from "lucide-react";
+import { useState } from "react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Index = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      {/* Header Navigation */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Gamepad2 className="w-8 h-8 text-hack-red" />
+              <span className="text-xl font-bold gradient-text">Daydream Rwanda</span>
+            </div>
+            
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-8">
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-muted-foreground hover:text-neon-cyan transition-colors"
+              >
+                About
+              </button>
+              <button 
+                onClick={() => scrollToSection('schedule')}
+                className="text-muted-foreground hover:text-neon-purple transition-colors"
+              >
+                Schedule
+              </button>
+              <button 
+                onClick={() => scrollToSection('prizes')}
+                className="text-muted-foreground hover:text-hack-red transition-colors"
+              >
+                Prizes
+              </button>
+              <button 
+                onClick={() => scrollToSection('sponsors')}
+                className="text-muted-foreground hover:text-neon-pink transition-colors"
+              >
+                Sponsors
+              </button>
+              <button 
+                onClick={() => scrollToSection('faq')}
+                className="text-muted-foreground hover:text-neon-cyan transition-colors"
+              >
+                FAQ
+              </button>
+              <button 
+                onClick={() => scrollToSection('team')}
+                className="text-muted-foreground hover:text-neon-purple transition-colors"
+              >
+                Team
+              </button>
+              <Button variant="hero" size="sm">
+                <Gamepad2 className="mr-2 w-4 h-4" />
+                Register
+              </Button>
+            </nav>
+            
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+          
+          {/* Mobile Navigation */}
+          {isMobileMenuOpen && (
+            <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+              <div className="flex flex-col gap-4">
+                <button 
+                  onClick={() => scrollToSection('about')}
+                  className="text-left text-muted-foreground hover:text-neon-cyan transition-colors"
+                >
+                  About
+                </button>
+                <button 
+                  onClick={() => scrollToSection('schedule')}
+                  className="text-left text-muted-foreground hover:text-neon-purple transition-colors"
+                >
+                  Schedule
+                </button>
+                <button 
+                  onClick={() => scrollToSection('prizes')}
+                  className="text-left text-muted-foreground hover:text-hack-red transition-colors"
+                >
+                  Prizes
+                </button>
+                <button 
+                  onClick={() => scrollToSection('sponsors')}
+                  className="text-left text-muted-foreground hover:text-neon-pink transition-colors"
+                >
+                  Sponsors
+                </button>
+                <button 
+                  onClick={() => scrollToSection('faq')}
+                  className="text-left text-muted-foreground hover:text-neon-cyan transition-colors"
+                >
+                  FAQ
+                </button>
+                <button 
+                  onClick={() => scrollToSection('team')}
+                  className="text-left text-muted-foreground hover:text-neon-purple transition-colors"
+                >
+                  Team
+                </button>
+                <Button variant="hero" size="sm" className="w-fit">
+                  <Gamepad2 className="mr-2 w-4 h-4" />
+                  Register
+                </Button>
+              </div>
+            </nav>
+          )}
+        </div>
+      </header>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
@@ -64,7 +186,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-6">
+      <section id="about" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -163,7 +285,7 @@ const Index = () => {
       </section>
 
       {/* Prizes Section */}
-      <section className="py-20 px-6">
+      <section id="prizes" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -218,7 +340,7 @@ const Index = () => {
       </section>
 
       {/* Schedule Section */}
-      <section className="py-20 px-6">
+      <section id="schedule" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -335,7 +457,7 @@ const Index = () => {
       </section>
 
       {/* Sponsors Section */}
-      <section className="py-20 px-6 bg-card/30">
+      <section id="sponsors" className="py-20 px-6 bg-card/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -396,7 +518,7 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-6">
+      <section id="faq" className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -442,7 +564,7 @@ const Index = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 px-6 bg-card/30">
+      <section id="team" className="py-20 px-6 bg-card/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">

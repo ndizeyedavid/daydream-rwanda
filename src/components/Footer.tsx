@@ -27,6 +27,12 @@ export default function Footer() {
                     <a href="#faq" className="hover:text-neon-cyan transition-colors">
                         FAQ
                     </a>
+                    <a
+                        href="https://github.com/ndizeyedavid/daydream-rwanda"
+                        className="hover:text-neon-cyan transition-colors"
+                    >
+                        Github Repo
+                    </a>
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-border text-sm text-muted-foreground">

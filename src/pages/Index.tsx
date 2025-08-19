@@ -217,8 +217,284 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Location & Registration */}
+      {/* Schedule Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="gradient-text">Detailed Schedule</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Every moment planned for maximum creativity and fun
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-neon-purple mb-4">Friday - Kickoff</h3>
+              <div className="space-y-4">
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-purple/20">
+                  <Clock className="w-5 h-5 text-neon-purple mt-1" />
+                  <div>
+                    <div className="font-semibold">6:00 PM - Registration & Check-in</div>
+                    <div className="text-sm text-muted-foreground">Welcome snacks and swag pickup</div>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-purple/20">
+                  <Clock className="w-5 h-5 text-neon-purple mt-1" />
+                  <div>
+                    <div className="font-semibold">7:00 PM - Opening Ceremony</div>
+                    <div className="text-sm text-muted-foreground">Theme reveal & team formation</div>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-purple/20">
+                  <Clock className="w-5 h-5 text-neon-purple mt-1" />
+                  <div>
+                    <div className="font-semibold">8:00 PM - Hacking Begins!</div>
+                    <div className="text-sm text-muted-foreground">Pizza party & brainstorming</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-neon-cyan mb-4">Saturday - Build Day</h3>
+              <div className="space-y-4">
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-cyan/20">
+                  <Clock className="w-5 h-5 text-neon-cyan mt-1" />
+                  <div>
+                    <div className="font-semibold">9:00 AM - Breakfast & Workshops</div>
+                    <div className="text-sm text-muted-foreground">Game design & coding tutorials</div>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-cyan/20">
+                  <Clock className="w-5 h-5 text-neon-cyan mt-1" />
+                  <div>
+                    <div className="font-semibold">12:00 PM - Lunch & Mentorship</div>
+                    <div className="text-sm text-muted-foreground">1-on-1 sessions with industry pros</div>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-cyan/20">
+                  <Clock className="w-5 h-5 text-neon-cyan mt-1" />
+                  <div>
+                    <div className="font-semibold">6:00 PM - Dinner & Activities</div>
+                    <div className="text-sm text-muted-foreground">Game tournaments & networking</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-hack-red mb-4">Sunday - Demo Day</h3>
+              <div className="space-y-4">
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-hack-red/20">
+                  <Clock className="w-5 h-5 text-hack-red mt-1" />
+                  <div>
+                    <div className="font-semibold">9:00 AM - Final Sprint</div>
+                    <div className="text-sm text-muted-foreground">Last chance to polish your game</div>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-hack-red/20">
+                  <Clock className="w-5 h-5 text-hack-red mt-1" />
+                  <div>
+                    <div className="font-semibold">2:00 PM - Submissions Due</div>
+                    <div className="text-sm text-muted-foreground">Upload your games & prep demos</div>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-hack-red/20">
+                  <Clock className="w-5 h-5 text-hack-red mt-1" />
+                  <div>
+                    <div className="font-semibold">4:00 PM - Demo Presentations</div>
+                    <div className="text-sm text-muted-foreground">Show off your creations!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-neon-pink mb-4">Awards & Closing</h3>
+              <div className="space-y-4">
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-pink/20">
+                  <Trophy className="w-5 h-5 text-neon-pink mt-1" />
+                  <div>
+                    <div className="font-semibold">6:00 PM - Awards Ceremony</div>
+                    <div className="text-sm text-muted-foreground">Winners announced & prizes awarded</div>
+                  </div>
+                </div>
+                <div className="flex gap-4 p-4 rounded-lg bg-card border border-neon-pink/20">
+                  <Trophy className="w-5 h-5 text-neon-pink mt-1" />
+                  <div>
+                    <div className="font-semibold">7:00 PM - Closing Celebration</div>
+                    <div className="text-sm text-muted-foreground">Group photos & final goodbyes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
       <section className="py-20 px-6 bg-card/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="gradient-text">Our Sponsors</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Amazing companies making Daydream Rwanda possible
+            </p>
+          </div>
+          
+          <div className="space-y-12">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-neon-purple mb-8">Title Sponsor</h3>
+              <div className="bg-card border border-neon-purple/30 rounded-lg p-8 max-w-md mx-auto">
+                <div className="w-32 h-32 bg-gradient-to-br from-neon-purple to-neon-cyan rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-white">Hack Club</span>
+                </div>
+                <p className="text-muted-foreground">Empowering teenagers worldwide to code and create</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-neon-cyan mb-8">Gold Sponsors</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="bg-card border border-neon-cyan/30 rounded-lg p-6">
+                    <div className="w-20 h-20 bg-neon-cyan/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                      <span className="text-neon-cyan font-bold">LOGO</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">Sponsor {i}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-hack-red mb-8">Community Partners</h3>
+              <div className="grid md:grid-cols-4 gap-4">
+                {[1, 2, 3, 4].map((i) => (
+                  <div key={i} className="bg-card border border-hack-red/30 rounded-lg p-4">
+                    <div className="w-16 h-16 bg-hack-red/20 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <span className="text-hack-red text-sm font-bold">LOGO</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground">Partner {i}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <Button variant="neon" size="lg">
+                <span className="mr-2">🤝</span>
+                Become a Sponsor
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="gradient-text">FAQ</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Everything you need to know about Daydream Rwanda
+            </p>
+          </div>
+          
+          <div className="space-y-6">
+            <Card variant="gaming" className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-neon-purple">Who can participate?</h3>
+              <p className="text-muted-foreground">Any high school student (ages 13-18) in Rwanda can participate! No previous coding or game development experience is required.</p>
+            </Card>
+            
+            <Card variant="gaming" className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-neon-cyan">Do I need a team?</h3>
+              <p className="text-muted-foreground">Teams can have 1-4 members. Don't have a team? No problem! We'll help you find teammates during the opening ceremony.</p>
+            </Card>
+            
+            <Card variant="gaming" className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-hack-red">What should I bring?</h3>
+              <p className="text-muted-foreground">Bring your laptop, charger, and enthusiasm! We'll provide food, drinks, swag, wifi, and everything else you need.</p>
+            </Card>
+            
+            <Card variant="gaming" className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-neon-pink">What kind of games can we build?</h3>
+              <p className="text-muted-foreground">Any type! Mobile games, web games, desktop games, VR experiences - as long as it's playable and follows the theme.</p>
+            </Card>
+            
+            <Card variant="gaming" className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-neon-purple">Is food provided?</h3>
+              <p className="text-muted-foreground">Yes! All meals, snacks, and drinks are completely free. We'll have options for different dietary requirements too.</p>
+            </Card>
+            
+            <Card variant="gaming" className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-neon-cyan">How are projects judged?</h3>
+              <p className="text-muted-foreground">Projects are judged on creativity, technical implementation, design, and how well they fit the theme. Our panel includes industry professionals and educators.</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-20 px-6 bg-card/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="gradient-text">Meet the Team</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              The amazing teenagers organizing Daydream Rwanda
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {[
+              { name: "Alex Murenzi", role: "Lead Organizer", color: "neon-purple" },
+              { name: "Grace Uwimana", role: "Logistics Director", color: "neon-cyan" },
+              { name: "David Nkurunziza", role: "Tech Lead", color: "hack-red" },
+              { name: "Sarah Mukamana", role: "Marketing Director", color: "neon-pink" },
+              { name: "Jean Hakizimana", role: "Sponsorship Lead", color: "neon-purple" },
+              { name: "Marie Ingabire", role: "Community Manager", color: "neon-cyan" }
+            ].map((member, index) => (
+              <Card key={index} variant="gaming" className="text-center p-6 group hover:scale-105 transition-transform duration-300">
+                <div className={`w-24 h-24 bg-${member.color}/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-${member.color}/30 transition-colors`}>
+                  <Users className={`w-12 h-12 text-${member.color}`} />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                <p className="text-muted-foreground mb-4">{member.role}</p>
+                <div className="flex justify-center gap-2">
+                  <Badge className={`bg-${member.color}/20 text-${member.color} border-${member.color}/30`}>
+                    Hack Club Member
+                  </Badge>
+                </div>
+              </Card>
+            ))}
+          </div>
+          
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-6">Special Thanks</h3>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <Card variant="gaming" className="p-6">
+                <h4 className="text-lg font-bold mb-2 text-neon-cyan">Mentors & Judges</h4>
+                <p className="text-muted-foreground">Industry professionals from local tech companies and international organizations volunteering their time.</p>
+              </Card>
+              <Card variant="gaming" className="p-6">
+                <h4 className="text-lg font-bold mb-2 text-neon-purple">Venue Partners</h4>
+                <p className="text-muted-foreground">Kigali Innovation Hub for providing the perfect space for our hackathon adventure.</p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location & Registration */}
+      <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-bold mb-8">
             <span className="gradient-text">Ready to Build?</span>

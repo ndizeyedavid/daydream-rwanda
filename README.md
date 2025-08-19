@@ -51,7 +51,7 @@ Daydream Rwanda is organized by Rwanda Hack Club teenagers with support from Hac
 ## 🔗 Connect With Us
 
 -   **Email**: [muganwarogers@gmail.com](mailto:muganwarogers@gmail.com)
--   **Website**: [daydreamrwanda.vercel.app](https://daydreamrwanda.vercel.app)
+-   **Website**: [https://daydreamrwanda.vercel.app/](https://https://daydreamrwanda.vercel.app/)
 
 ## 💻 Development
 

@@ -21,7 +21,7 @@ export default function Team() {
                             name: "Muganwa Rogers",
                             role: "Event Organiser",
                             color: "neon-purple",
-                            image: "/team/rogers.png",
+                            image: "/team/rogers2.jpg",
                         },
                         {
                             name: "Mugisha Valentin",
@@ -49,7 +49,7 @@ export default function Team() {
                         },
                         {
                             name: "Jack405",
-                            role: "Member",
+                            role: "Volunteer Coordinator",
                             color: "neon-cyan",
                             image: "/team/jack.png",
                         },

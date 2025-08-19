@@ -17,6 +17,7 @@ import {
     Zap,
     MapPin,
 } from "lucide-react";
+import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -29,6 +30,22 @@ import Team from "@/components/Team";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
 import { SmoothCursor } from "@/components/ui/Smooth-cursor";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
+const MotionWrapper = ({ children }: { children: React.ReactNode }) => {
+    const { ref, isInView } = useScrollAnimation();
+
+    return (
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+            {children}
+        </motion.div>
+    );
+};
 
 const Index = () => {
     return (
@@ -37,25 +54,49 @@ const Index = () => {
 
             <Header />
 
-            <Hero />
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+            >
+                <Hero />
+            </motion.div>
 
-            <About />
+            <MotionWrapper>
+                <About />
+            </MotionWrapper>
 
-            <Timeline />
+            <MotionWrapper>
+                <Timeline />
+            </MotionWrapper>
 
-            <Prizes />
+            <MotionWrapper>
+                <Prizes />
+            </MotionWrapper>
 
-            <Schedule />
+            <MotionWrapper>
+                <Schedule />
+            </MotionWrapper>
 
-            <Sponsors />
+            <MotionWrapper>
+                <Sponsors />
+            </MotionWrapper>
 
-            <Faqs />
+            <MotionWrapper>
+                <Faqs />
+            </MotionWrapper>
 
-            <Team />
+            <MotionWrapper>
+                <Team />
+            </MotionWrapper>
 
-            <Location />
+            <MotionWrapper>
+                <Location />
+            </MotionWrapper>
 
+            {/* <MotionWrapper> */}
             <Footer />
+            {/* </MotionWrapper> */}
         </div>
     );
 };

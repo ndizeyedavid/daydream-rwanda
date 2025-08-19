@@ -1,73 +1,81 @@
-# Welcome to your Lovable project
+# Daydream Rwanda 🎮
 
-## Project info
+![Daydream Rwanda](./public/favicon.ico)
 
-**URL**: https://lovable.dev/projects/665457f2-73e2-4183-8d77-e466b8699499
+## The Ultimate Game Jam for High School Students in Rwanda
 
-## How can I edit this code?
+Daydream Rwanda is a 48-hour game development hackathon where high school students (ages 13-18) come together to build games, make friends, and turn their wildest ideas into reality.
 
-There are several ways of editing your application.
+## 🚀 Event Details
 
-**Use Lovable**
+-   **When**: August 26-27, 2025
+-   **Where**: FabLab Kacyiru, Kigali, Rwanda
+-   **Who**: High school students in Rwanda (ages 13-18)
+-   **Cost**: Free! (includes food, drinks, swag, and mentorship)
+-   **Prizes**: $1,000+ in prizes and exclusive opportunities from Hack Club
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/665457f2-73e2-4183-8d77-e466b8699499) and start prompting.
+## 📅 Schedule Highlights
 
-Changes made via Lovable will be committed automatically to this repo.
+### Saturday - Build Day
 
-**Use your preferred IDE**
+-   Team formation and theme reveal
+-   Workshops and mentorship sessions
+-   Collaborative coding and game development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Sunday - Demo Day
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+-   Final sprint to polish games
+-   Project presentations
+-   Awards ceremony and celebration
 
-Follow these steps:
+## 🏆 Prizes
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+-   **1st Place**: To be announced
+-   **2nd Place**: To be announced
+-   **3rd Place**: To be announced
+-   **Special Categories**: Innovation, Design, and Social Impact awards
+-   **All Participants**: Exclusive Hack Club merchandise
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ❓ FAQ
 
-# Step 3: Install the necessary dependencies.
-npm i
+-   **Who can participate?** Any high school student (ages 13-18) in Rwanda. No previous coding experience required!
+-   **Do I need a team?** Teams can have 1-4 members. Don't have a team? We'll help you find teammates during the opening ceremony.
+-   **What should I bring?** Your laptop, charger, and enthusiasm! We'll provide food, drinks, swag, wifi, and everything else.
+-   **What kind of games can we build?** Any type! Mobile games, web games, desktop games, VR experiences - as long as it's playable and follows the theme.
+-   **Is food provided?** Yes! All meals, snacks, and drinks are completely free.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 👥 Organized By
+
+Daydream Rwanda is organized by Rwanda Hack Club teenagers with support from Hack Club.
+
+## 🔗 Connect With Us
+
+-   **Email**: [muganwarogers@gmail.com](mailto:muganwarogers@gmail.com)
+-   **Website**: [daydreamrwanda.vercel.app](https://daydreamrwanda.vercel.app)
+
+## 💻 Development
+
+This website is built with:
+
+-   React + TypeScript
+-   Vite
+-   Tailwind CSS
+-   Framer Motion for animations
+-   Shadcn UI components
+
+### Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/665457f2-73e2-4183-8d77-e466b8699499) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Powered by [Hack Club](https://hackclub.com/) • Part of the global Daydream movement bringing hackathons to high schoolers worldwide

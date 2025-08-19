@@ -45,7 +45,7 @@ export default function Team() {
                             name: "Damson",
                             role: "Logistics & Operations",
                             color: "neon-pink",
-                            image: "/team/damson.png",
+                            image: "/team/damson.jpg",
                         },
                         {
                             name: "Jack405",

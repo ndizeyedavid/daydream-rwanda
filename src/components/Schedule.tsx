@@ -23,7 +23,7 @@ export default function Schedule() {
                                 <Clock className="w-5 h-5 text-neon-cyan mt-1" />
                                 <div>
                                     <div className="font-semibold">
-                                        6:00 PM - Registration & Check-in
+                                        6:00 AM - Registration & Check-in
                                     </div>
                                     <div className="text-sm text-muted-foreground">
                                         Welcome snacks and swag pickup
@@ -34,7 +34,7 @@ export default function Schedule() {
                                 <Clock className="w-5 h-5 text-neon-cyan mt-1" />
                                 <div>
                                     <div className="font-semibold">
-                                        7:00 PM - Opening Ceremony
+                                        7:00 AM - Opening Ceremony
                                     </div>
                                     <div className="text-sm text-muted-foreground">
                                         Theme reveal & team formation
@@ -45,7 +45,7 @@ export default function Schedule() {
                                 <Clock className="w-5 h-5 text-neon-cyan mt-1" />
                                 <div>
                                     <div className="font-semibold">
-                                        8:00 PM - Hacking Begins!
+                                        8:00 AM - Hacking Begins!
                                     </div>
                                     <div className="text-sm text-muted-foreground">
                                         Brainstorming & preparation

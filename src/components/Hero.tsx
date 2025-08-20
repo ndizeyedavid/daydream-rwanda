@@ -37,10 +37,12 @@ export default function Hero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                    <Button variant="hero" size="xl">
-                        <Gamepad2 className="mr-2" />
-                        Register Now
-                    </Button>
+                    <a href="http://daydream.hackclub.com/" target="_blank">
+                        <Button variant="hero" size="xl">
+                            <Gamepad2 className="mr-2" />
+                            Register Now
+                        </Button>
+                    </a>
                     <a
                         href="https://hcb.hackclub.com/donations/start/daydream-matimba"
                         target="_blank"

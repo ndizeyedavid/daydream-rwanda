@@ -69,10 +69,12 @@ export default function Header() {
                             Team
                         </button>
 
-                        <Button variant="hero" size="sm">
-                            <Gamepad2 className="mr-2 w-4 h-4" />
-                            Register
-                        </Button>
+                        <a href="http://daydream.hackclub.com/" target="_blank">
+                            <Button variant="hero" size="sm">
+                                <Gamepad2 className="mr-2 w-4 h-4" />
+                                Register
+                            </Button>
+                        </a>
                     </nav>
 
                     {/* Mobile Menu Button */}

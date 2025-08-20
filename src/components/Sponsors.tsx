@@ -51,6 +51,11 @@ export default function Sponsors() {
                                     logo: "/sponsors/jukebox.svg",
                                     url: "https://www.jukeboxprint.com/custom-stickers",
                                 },
+                                {
+                                    name: "Fablab",
+                                    logo: "/sponsors/fablab.png",
+                                    url: "https://fablab.rw/",
+                                },
                             ].map((sponsor, i) => (
                                 <a
                                     href={sponsor.url}
@@ -59,7 +64,7 @@ export default function Sponsors() {
                                     className="bg-card border border-hack-red/30 rounded-lg p-4"
                                 >
                                     <div className="w-16 h-16 bg-hack-red/20 rounded-lg flex items-center justify-center mx-auto mb-2">
-                                        <span className="text-hack-red text-sm font-bold">
+                                        <span className="text-hack-red text-sm font-bold p-1">
                                             <img
                                                 src={sponsor.logo}
                                                 width={100}
@@ -74,12 +79,6 @@ export default function Sponsors() {
                                 </a>
                             ))}
                         </div>
-                    </div>
-
-                    <div className="text-center">
-                        <Button variant="neon" size="lg">
-                            Become a Sponsor
-                        </Button>
                     </div>
                 </div>
             </div>

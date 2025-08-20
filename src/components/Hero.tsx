@@ -41,10 +41,14 @@ export default function Hero() {
                         <Gamepad2 className="mr-2" />
                         Register Now
                     </Button>
-                    <Button variant="neon" size="xl">
-                        <Code className="mr-2" />
-                        Learn More
-                    </Button>
+                    <a
+                        href="https://hcb.hackclub.com/donations/start/daydream-matimba"
+                        target="_blank"
+                    >
+                        <Button variant="neon" size="xl">
+                            Donate
+                        </Button>
+                    </a>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
